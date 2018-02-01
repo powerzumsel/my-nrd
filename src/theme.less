@@ -12,21 +12,25 @@
 @widgetTextColor: rgb(255, 255, 255);
 @widgetBackgroundColor: #4FBAE4;
 // @widgetBackgroundColor1: #6d6027;
-@mycolor:whitesmoke;
+@mycolor1:whitesmoke;
+@mycolor2:black;
 
 @widgetBorderColor: #fff;
 
 body {    
-	//background: -webkit-gradient(linear, left top, left bottom, from(#73C8A9), to(#373b44)) fixed;
-	//background: -webkit-gradient(linear, left top, left bottom, from(#3c3b3f), to(#605c3c)) fixed;
-	//background: linear-gradient(180deg,#6d6027,#d3cbb8);
+	// background: -webkit-gradient(linear, left top, left bottom, from(#73C8A9), to(#373b44)) fixed;
+	// background: -webkit-gradient(linear, left top, left bottom, from(#3c3b3f), to(#605c3c)) fixed;
+	//  background: linear-gradient(180deg,#6d6027,#d3cbb8);
 	//background: -webkit-gradient(linear, left top, left bottom, from(#6d6027), to(#d3cbb8)) fixed;
-	//background: -webkit-gradient(linear, left top, left bottom, from(#757519), to(#000000)) fixed;
-	//background: -webkit-gradient(linear, left top, left bottom, from(#31631a), to(#7abd27)) fixed;
+	//  background: -webkit-gradient(linear, left top, left bottom, from(#757519), to(#000000)) fixed;
+	//  background: -webkit-gradient(linear, left top, left bottom, from(#31631a), to(#7abd27)) fixed;
 	//background-image: url("http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg");
 	//background-image: url("http://www.kinyu-z.net/data/wallpapers/178/1326821.jpg");
-	background-image: url("http://www.kinyu-z.net/data/wallpapers/227/1498407.jpg");
-	//background-image: url("1.jpg");
+	//background-image: url("http://www.kinyu-z.net/data/wallpapers/227/1498407.jpg");   //cool
+	//background-image: url("http://www.kinyu-z.net/data/wallpapers/226/1494183.jpg");
+	//background-image: url("http://www.kinyu-z.net/data/wallpapers/169/1297256.jpg");
+	
+	background-image: url("1.jpg");
   };
 
 .nr-dashboard-disabled {
@@ -77,22 +81,27 @@ body.nr-dashboard-theme md-toolbar {
 body.nr-dashboard-theme md-sidenav {
 	//background-color: @pageSidebarBackgroundColor;
 	background-color: #605c3c;
-	color:@mycolor;
+	color:@mycolor1;
 }
 
 /*
 	GROUP SPECIFIC
 */
 .nr-dashboard-theme ui-card-panel {
-	//background-color: @groupBackgroundColor;
-	
-	background-color: rgba(255, 255, 255, 0.1); 
+	//background-color: @groupBackgroundColor;	
 
-	border: 1px solid rgba(245, 245, 245, 0.555);
-	//border: 1px solid @groupBorderColor;	
-	//background: transparent;
+	
+
+	border: 1px solid rgba(245, 245, 245, 0.555);	
+	
 	border-radius: 5px;
-	color:@mycolor;
+	color:@mycolor1;
+
+	//background: transparent;
+	background-color: rgba(10, 10, 10, 0.3); 
+
+	//border: 1px solid rgba(245, 245, 245, 0.555);
+	//box-shadow: 0px 0px 10px 3px rgba(10, 10, 10, 0.8);
 }
 
 /*
@@ -102,15 +111,20 @@ body.nr-dashboard-theme md-sidenav {
 /* Button */
 .nr-dashboard-theme .nr-dashboard-button .md-button {
 	// background-color: @widgetBackgroundColor;
-	color: @mycolor;
+
+	color: @mycolor1;
 	background: transparent;
 	border-radius: 5px;
+
+	// border: 1px solid rgba(245, 245, 245, 0.555);
+	//box-shadow: 0px 0px 10px 3px rgba(10, 10, 10, 0.8);
 }
 .nr-dashboard-theme .nr-dashboard-button .md-button:hover {
 	background: transparent;
 	border: 1px solid rgba(245, 245, 245, 0.301);
 	border-radius: 5px;
-		
+	
+	
 	// background-color: lighten(@widgetBackgroundColor, 5);
 }
 
